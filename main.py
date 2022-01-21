@@ -20,10 +20,7 @@ if __name__ == '__main__':
             ui.resultLbl.setText(newEs['fa_result'])
             ui.descriptionLbl.setText(newEs['fa_comment'])
             ui.suraLbl.setText(
-              f"سوره: {newEs['sure']} ({newEs['sure_no']})"
-            )
-            ui.ayeLbl.setText(
-              f"آیه: {newEs['aye_no']}"
+                f"سوره: {newEs['sure']} ({newEs['sure_no']})  آیه: {newEs['aye_no']}"
             )
             ui.ayeTextLbl.setText(newEs['aye'])
         ui.newBtn.clicked.connect(newEstexareBtnClick)

@@ -110,16 +110,9 @@ class Ui_MainWindow(object):
         self.suraLbl = QLabel(self.frame)
         self.suraLbl.setObjectName(u"suraLbl")
         self.suraLbl.setAlignment(
-            Qt.AlignTrailing | Qt.AlignLeft | Qt.AlignVCenter)
+            Qt.AlignHCenter | Qt.AlignVCenter)
 
         self.horizontalLayout.addWidget(self.suraLbl)
-
-        self.ayeLbl = QLabel(self.frame)
-        self.ayeLbl.setObjectName(u"ayeLbl")
-        self.ayeLbl.setAlignment(
-            Qt.AlignLeading | Qt.AlignLeft | Qt.AlignVCenter)
-
-        self.horizontalLayout.addWidget(self.ayeLbl)
 
         self.verticalLayout.addLayout(self.horizontalLayout)
 
@@ -190,8 +183,6 @@ class Ui_MainWindow(object):
         self.descriptionLbl.setText(
             QCoreApplication.translate("MainWindow", u"", None))
         self.suraLbl.setText(
-            QCoreApplication.translate("MainWindow", u"", None))
-        self.ayeLbl.setText(
             QCoreApplication.translate("MainWindow", u"", None))
         self.ayeTextLbl.setText(
             QCoreApplication.translate("MainWindow", u"", None))
