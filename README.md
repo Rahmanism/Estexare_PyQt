@@ -31,7 +31,11 @@ If you want make a single executable file (like the releases):
 pip install PyInstaller  
 
 # make the executable  
-pyinstaller -F ./main.py  
+pyinstaller --add-data 'db.db:.' -F main.py  
+
+# make the executable for non *nix systems (e.g. Windows)  
+pyinstaller --add-data 'db.db;.' -F main.py  
+
 ```
 
 
